@@ -1,0 +1,85 @@
+/* || Constants */
+
+:root {
+  --color-1: rgb(225, 255, 177);
+  --color-2: rgb(199, 242, 164);
+  --color-3: rgb(182, 227, 136);
+  --color-4: rgb(252, 255, 178);
+  --color-5: #41403E;
+  --sketch-border-top-left-radius: 255px 15px;
+  --sketch-border-top-right-radius: 15px 225px;
+  --sketch-border-bottom-right-radius: 225px 15px;
+  --sketch-border-bottom-left-radius: 15px 255px;
+  --sketch-border-size: 3px;
+}
+
+/* || General styles */
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  width: 60%;
+  margin: auto;
+}
+
+body {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* || Navigation */
+
+.banner {
+  margin: auto;
+  width: 80%;
+  display: block;
+}
+
+menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  font-size: larger;
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin: 0.2rem;
+  padding: 0.7rem;
+  border: solid transparent var(--sketch-border-size);
+}
+
+.submenu {
+  display: none;
+}
+
+/* Cover both touchscreen and KBM */
+menu li:hover .submenu,
+menu li:active .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+/* Cover both touchscreen and KBM */
+menu li:hover .menu-item,
+menu li:active .menu-item {
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 15px;
+  border-bottom-left-radius: 15px 255px;
+  box-shadow: 2px 8px 4px -6px var(--color-3);
+  border: solid var(--sketch-border-size) var(--color-5);
+}
