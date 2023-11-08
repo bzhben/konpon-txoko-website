@@ -68,6 +68,6 @@ Header set X-Content-Type-Options "nosniff"
 
 AuthType Basic
 AuthName "Secure Content"
-AuthUserFile E:\Documents\web\kirby\konpon\konpon-txoko-website\.htpasswd
-# AuthUserFile /home/mege9634/mege9634.odns.fr/benjamin.olivier/pw/.htpasswd
+# AuthUserFile E:\Documents\web\kirby\konpon\konpon-txoko-website\.htpasswd
+AuthUserFile /home/mege9634/mege9634.odns.fr/benjamin.olivier/pw/.htpasswd
 require valid-user
