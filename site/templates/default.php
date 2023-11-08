@@ -6,7 +6,6 @@
       <?= $block ?>
     </div>
   <?php endforeach ?>
-  <a href="#" role="button" onclick="event.preventDefault()">Call to action</a>
 </main>
 
 <?php snippet('footer') ?>

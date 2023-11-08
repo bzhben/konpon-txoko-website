@@ -60,8 +60,8 @@ menu {
   display: block;
   color: black;
   text-decoration: none;
-  margin: 0.2rem;
-  padding: 0.7rem;
+  margin: 0;
+  padding: 0.9rem;
   border: solid transparent var(--sketch-border-size);
 }
 
@@ -78,24 +78,12 @@ menu li:active .submenu {
   box-shadow: 0px 6px 4px -6px var(--color-5);
 }
 
-/* Cover both touchscreen and KBM */
-/* menu > li:hover > .menu-item,
-menu > li:active > .menu-item {
-   border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius: 15px 255px;
-  box-shadow: 2px 8px 4px -6px var(--color-3);
-  border: solid var(--sketch-border-size) var(--color-5);
-  color: green;
-} */
-
 menu .menu-item:hover,
 menu .menu-item:active {
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
   border-bottom-right-radius: 225px 15px;
   border-bottom-left-radius: 15px 255px;
-  /*box-shadow: 2px 8px 4px -6px var(--color-3);*/
   border: solid var(--sketch-border-size) var(--color-5);
+  cursor: pointer;
 }

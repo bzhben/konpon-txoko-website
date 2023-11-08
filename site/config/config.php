@@ -3,5 +3,8 @@
 return [
     'debug'  => true,
     'home' => 'accueil',
-    'languages' => true
+    'languages' => true,
+    'panel' =>[
+        'install' => true
+      ]
 ];
