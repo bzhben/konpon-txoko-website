@@ -87,3 +87,7 @@ menu .menu-item:active {
   border: solid var(--sketch-border-size) var(--color-5);
   cursor: pointer;
 }
+
+.flag {
+  height: 1em;
+}

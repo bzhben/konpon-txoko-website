@@ -58,6 +58,29 @@
             <?php endif ?>
           </li>
         <?php endforeach ?>
+
+        <li>
+          <div class="menu-item">
+            <img class="flag" src="<?= url('assets/flags/' . $kirby->language()->code() . '.svg') ?>"
+            alt="Language en cours d'utilisation">
+          </div>
+          
+          <menu class="submenu">
+            <?php foreach ($kirby->languages() as $language):
+              // List languages except currently selected language
+              if ($kirby->language() == $language):
+                continue;
+              endif ?>
+              <li>
+                <a class="menu-item" href="<?= $page->url($language->code()) ?>"
+                  hreflang="<?php echo $language->code() ?>">
+                  <img class="flag" src="<?= url('assets/flags/' . $language->code() . '.svg') ?>"
+                    alt="Language au choix">
+                </a>
+              </li>
+            <?php endforeach ?>
+          </menu>
+        </li>
       </menu>
     </nav>
   </header>
